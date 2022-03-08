@@ -1,31 +1,34 @@
 /* Trees Image - Pexels: https://www.pexels.com/photo/photo-of-trees-in-forest-3801030/ */
 @import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&family=Righteous&display=swap');
+
 
 html {
   box-sizing: border-box;
 }
 
 :root {
-  --column-1: #a2622d;
-  --column-2: #1b6161;
-  --column-3: #248224;
-  --column-4: #a22d22;
+  --column-1: #05051a;
+  --column-2: #a22d22;
+  --column-3: #9c32af;
+  --column-4: #23a4b3;
 }
 
 body {
   margin: 0;
-  background: url("./trees.jpg");
+  background: url("./miles\ morales.jpeg");
   background-size: cover;
   background-position: 50% 60%;
   background-attachment: fixed;
   color: white;
-  font-family: Quicksand, sans-serif;
+  font-family: 'Raleway', sans-serif;
   overflow-y: hidden;
 }
 
 h1 {
   letter-spacing: 2px;
   text-shadow: 2px 2px 5px black;
+  font-family: 'Righteous', sans-serif;
 }
 
 .main-title {
@@ -50,7 +53,7 @@ ul {
 
 /* Columns */
 .drag-column {
-
+  flex: 1;
   margin: 0 10px;
   position: relative;
   background-color: rgba(0, 0, 0, 0.4);

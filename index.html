@@ -3,12 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drag and Drop</title>
+    <title>Jonny's Kanban Board</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="main-title">Kanban Board</h1>
+    <h1 class="main-title">Jonny's Kanban Board</h1>
+    <div class="drag-container">
+        <ul class="drag-list">
+
+            <!-- Backlog Column -->
+            <section class="drag-column backlog-column">
+                <span class="header">
+                    <h1>Backlog</h1>
+                </span>
+                <section id="backlog-content">
+                    <ul id="backlog-list" class="drag-item-list custom-scroll">
+                        <li class="drag-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius placerat diam. Fusce ullamcorper molestie tortor ac rhoncus. Ut pellentesque venenatis arcu, non pharetra nulla condimentum ut. Maecenas at neque pharetra, feugiat diam eu, cursus urna. Donec euismod et turpis ut finibus. Integer commodo nisi quis venenatis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+                            Phasellus tortor eros, malesuada et lorem sed, facilisis consectetur nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae elementum metus, vitae tempor lorem. Morbi at ultricies nisi. Cras vitae ex ut dui dictum auctor vitae eget felis. Phasellus nec vulputate lectus. Donec fermentum rutrum dolor. Proin eget laoreet ligula. Fusce a dui quis urna ullamcorper semper. Vestibulum posuere urna ac molestie sagittis. Fusce ante libero, elementum ac felis nec, commodo tempor diam. Suspendisse leo velit, cursus ut nisi sed, dictum congue ex. Praesent tristique risus risus, nec volutpat sapien eleifend a.
+                            
+                            Pellentesque et orci sed neque venenatis pharetra. Mauris fermentum eu dui facilisis semper. Sed in nunc in nulla aliquet luctus sed sed quam. Morbi porta justo sit amet bibendum varius. Nam urna sapien, convallis ut accumsan convallis, tempor vitae ipsum. Mauris porta dolor a lectus euismod, at aliquam velit iaculis. Proin nec nunc in mauris blandit vehicula. Integer blandit augue a cursus maximus. Suspendisse et sem laoreet, lobortis lacus id, ornare leo. Vestibulum quis congue turpis. Etiam sed vehicula orci. Morbi pulvinar arcu dolor, non venenatis nulla interdum at.
+                            
+                            Fusce dignissim accumsan sagittis. Nullam malesuada sed turpis ac tincidunt. Pellentesque sodales, sem ut faucibus sodales, lacus eros tempor sem, vel bibendum ipsum erat ac felis. Nam id arcu nec nunc finibus laoreet. Etiam at porttitor lacus. Ut mauris nulla, consequat a mattis vitae, pulvinar nec tellus. Donec rhoncus eget lacus sit amet auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque quam nunc, pharetra sed tristique nec, blandit eu neque. In sollicitudin scelerisque varius. Duis consequat, odio a condimentum hendrerit, odio arcu ultricies metus, sit amet venenatis tortor quam quis neque. Morbi mattis non mi ut lobortis. Phasellus et efficitur nibh, porttitor pulvinar odio. Etiam sit amet hendrerit lectus.
+                            
+                            Ut eget risus vel nibh dapibus hendrerit. Quisque dapibus massa a turpis ornare, ut mollis erat rhoncus. Sed vestibulum, risus eleifend bibendum sollicitudin, sem mauris lobortis sem, ac ornare orci metus non nisl. Vestibulum sodales magna sit amet libero hendrerit, nec varius quam placerat. Sed eu vehicula risus. Maecenas est augue, vestibulum a lacus tempor, dapibus congue erat. Donec suscipit, sapien quis consequat finibus, sapien velit accumsan nunc, eu dictum ex urna ut velit. Maecenas laoreet mi at lectus mollis, nec rutrum nulla tincidunt. Etiam vehicula risus nec nunc vulputate mollis. Proin vel urna sit amet est sodales elementum at a neque. Quisque rhoncus, orci sed pharetra accumsan, sem est laoreet enim, commodo maximus ipsum elit ut mi.</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Tester</li>
+                    </ul>
+                </section>
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span class="plus-sign"></span>
+                        <span>Add Text</span>
+                    </div>
+                    <section class="add-btn solid">
+                        <span>Save Item</span>
+                    </section>
+                    <div class="add-container">
+                        <div class="add-item"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Progress Column -->
+            <section class="drag-column progress-column">
+                <span class="header">
+                    <h1>Progress</h1>
+                </span>
+                <section id="progress-content">
+                    <ul id="progress-list" class="drag-item-list">
+                        <li class="drag-item">Test</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Tester</li>
+                    </ul>
+                </section>
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span class="plus-sign"></span>
+                        <span>Add Text</span>
+                    </div>
+                    <section class="add-btn solid">
+                        <span>Save Item</span>
+                    </section>
+                    <div class="add-container">
+                        <div class="add-item"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Complete Column -->
+            <section class="drag-column complete-column">
+                <span class="header">
+                    <h1>Complete</h1>
+                </span>
+                <section id="complete-content">
+                    <ul id="complete-list" class="drag-item-list">
+                        <li class="drag-item">Test</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Tester</li>
+                    </ul>
+                </section>
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span class="plus-sign"></span>
+                        <span>Add Text</span>
+                    </div>
+                    <section class="add-btn solid">
+                        <span>Save Item</span>
+                    </section>
+                    <div class="add-container">
+                        <div class="add-item"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- On Hold Column -->
+            <section class="drag-column on-hold-column">
+                <span class="header">
+                    <h1>On Hold</h1>
+                </span>
+                <section id="on-hold-content">
+                    <ul id="on-hold-list" class="drag-item-list">
+                        <li class="drag-item">Test</li>
+                        <li class="drag-item">Testing</li>
+                        <li class="drag-item">Tester</li>
+                    </ul>
+                </section>
+                <div class="add-btn-group">
+                    <div class="add-btn">
+                        <span class="plus-sign"></span>
+                        <span>Add Text</span>
+                    </div>
+                    <section class="add-btn solid">
+                        <span>Save Item</span>
+                    </section>
+                    <div class="add-container">
+                        <div class="add-item"></div>
+                    </div>
+                </div>
+            </section>
+
+        </ul>
+    </div>
     <!-- Script -->
     <script src="script.js"></script>
 </body>
