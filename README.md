@@ -1,0 +1,4 @@
+# Kanban-Board-InfPALS-Project
+A kanban board built during InfPALS's Big Project course, using vanilla JavaScript.
+
+HTML and JS written by Jonathan Steel. CSS written by GitHub.
